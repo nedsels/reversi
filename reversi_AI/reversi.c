@@ -81,8 +81,9 @@ int main() {
 
       if (!checkLegal(board, n, letterToNumber(playerMove[0]),
                       letterToNumber(playerMove[1]), playerColour)) {
-        printf("Invalid move.\n%c player wins.\n", computerColour);
-        return 0;
+        printf("Invalid move.\n", computerColour);
+        nextTurn(&turn);
+        continue;
       } else {
         updateBoard(board, n, letterToNumber(playerMove[0]),
                     letterToNumber(playerMove[1]), playerColour);
