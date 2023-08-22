@@ -32,12 +32,9 @@ void copyBoard(char boardTo[][26], char boardFrom[][26], int n);
 int discsPlayed(char board[][26], int n);
 
 int main() {
-  int n = 0;
+  int n = 8;
   char computerColour = 0;
   char playerColour = 0;
-
-  printf("Enter the board dimension: ");
-  scanf("%d", &n);
 
   printf("Computer plays (B/W): ");
   scanf(" %c", &computerColour);
